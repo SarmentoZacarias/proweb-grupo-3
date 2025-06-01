@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submissão de Projectos</title>
+    <title>Submissão de Projetos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
-    
+    <div class="navbar dark">
+        <div class="nav-logo">
+            <img src="../images/assets/logo/logo.png" alt="logo-ispt">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-menu-list">
+                <ul>
+                   <li>
+                    <a href="../">Home</a>
+                   </li> 
+                   <li>
+                    <a href="../votos/index.html">Votação</a>
+                   </li> 
+                   <li class="marked">
+                    <a href="../submissao/index.html">Submissão</a>
+                   </li> 
+                   
+                   <li>
+                    <a href="../galeria/index.html">Galeria</a>
+                   </li> 
+                </ul>
+            </div>
+            <div class="nav-menu-session">
+                <!-- <button class="btn-signin"><a href="./signin/index.html">Signin</a></button> -->
+                <!-- <button class="btn-signup primary-btn"><a href="./signup/index.html">Signup</a></button> -->
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 70px; margin-bottom: 70px;">
+        <!-- Lado Esquerdo (Upload do Projeto) -->
+        <div style="margin-right: 50px; text-align: center;">
+     
+            <!-- Área de Upload/Arraste -->
+            <div style="border: 2px dashed #ccc; padding: 40px; width: 300px; text-align: center; margin-bottom: 20px;">
+                <p style="font-size: .8rem;">Arraste seu projeto aqui ou</p>
+                <input type="file" id="projeto-upload" style="display: none;">
+                <button onclick="document.getElementById('projeto-upload').click()" style="padding: 8px 20px; margin-top: 10px; font-size: .7rem;">
+                    Selecionar Arquivo
+                </button>
+            </div>
+        </div>
+        
+        <!-- Lado Direito (Descrição do Projeto) -->
+        <div>
+            <div style="margin-bottom: 15px;">
+                <h1 style="font-size: .95rem; text-align: center; padding-bottom: 10px; color: rgb(100, 100, 100);">Submeter Projecto</h1>
+            </div>
+            <!-- Campos de Descrição -->
+            <div style="margin-bottom: 15px;">
+                <input type="text" placeholder="Título do Projeto" class="input-form">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <input type="text" placeholder="Tecnologias Utilizadas"  class="input-form">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <input type="text" placeholder="Link do Repositório (opcional)"  class="input-form">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <textarea placeholder="Descrição do Projeto" style=" height: 100px;"  class="input-form"></textarea>
+            </div>
+            
+            <!-- Botão de Submissão -->
+            <div>
+                <button style="width: 100%; text-align: center; color: #fff; background-color: #366336; font-size: .7rem;" class="input-form">Submeter Projeto</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-hackathons">
+        <div class="header-title">
+            <h3>Nossa Galeria</h3>
+        </div>
+        <div class="carrosel-more">
+            <div class="card-more">
+                <img src="../images/assets/11669276_20945851.jpg" alt="" class="img-more">
+            </div>
+            <div class="card-more">
+                <img src="../images/assets/3107637_35212.jpg" alt="" class="img-more">
+            </div>
+            <div class="card-more">
+                <img src="../images/assets/133781034_10258309.jpg" alt="" class="img-more">
+            </div>
+            <div class="card-more">
+                <img src="../images/assets/11667592_20945447.jpg" alt="" class="img-more">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="padding: 30px;">
+        <div class="footer-row">
+            <div class="institute-description">
+                <div class="footer-logo" style="width: 50px; height: 50px;">
+                    <img src="../images/assets/logo/logo.png" alt="logotipo">
+                </div>
+                <div class="footer-p">
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur asperiores sequi reprehenderit quis veritatis unde enim, eius quos harum labore fugiat sit optio eum eaque praesentium. Molestiae, vel pariatur.</p> -->
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><span>Home</span></li>
+                    <li><span>Concurso</span></li>
+                    <li><span>Projectos</span></li>
+                    <li><span>Galeria</span></li>
+                    <li><span>Votação</span></li>
+                    <li><span>Calendario</span></li>
+                    <li><span>Contacto</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-row line">
+            <div class="copy-right">
+                <p>&copy;2025 <b>Grupo 3</b>, Todos os Direitos Reservados</p>
+            </div>
+           
+        </div>
+    </div>
 </body>
 </html>

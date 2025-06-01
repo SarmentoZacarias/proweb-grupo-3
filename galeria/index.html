@@ -1,12 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
+    <title>Galeria dos Vencedores</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
+    <div class="navbar dark">
+        <div class="nav-logo">
+            <img src="../images/assets/logo/logo.png" alt="logo-ispt">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-menu-list">
+                <ul>
+                   <li>
+                    <a href="../">Home</a>
+                   </li> 
+                   <li>
+                    <a href="../votos/index.html">Votação</a>
+                   </li> 
+                   <li>
+                    <a href="../submissao/index.html">Submissão</a>
+                   </li> 
+                   
+                   <li class="marked">
+                    <a href="../galeria/index.html">Galeria</a>
+                   </li> 
+                </ul>
+            </div>
+            <div class="nav-menu-session">
+                <!-- <button class="btn-signin"><a href="../signin/index.html">Signin</a></button> -->
+                <!-- <button class="btn-signup primary-btn"><a href="../signup/index.html">Signup</a></button> -->
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin: auto; margin-top: 70px; margin-bottom: 70px; width: 80%;">
+        <!-- Lado Esquerdo (Grande - Galeria de Projetos) -->
+        <div style="width: 70%; margin-right: 30px;">
+            
+            <!-- Galeria de Projetos -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 30px;">
+                <!-- Projeto 1 -->
+                <div style="border: 1px solid #ddd; padding: 15px; text-align: center;">
+                    <div style="height: 150px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                        <img src="../images/media/1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+
+                    </div>
+                    <h3 style="margin: 5px 0; font-size: .95rem;">Projeto Vencedor</h3>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Categoria: Design</p>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Autor: João </p>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div style="border: 1px solid #ddd; padding: 15px; text-align: center;">
+                    <div style="height: 150px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                        <img src="../images/media/2.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+
+                    </div>
+                    <h3 style="margin: 5px 0; font-size: .95rem;">Projeto Inovador</h3>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Categoria: Tecnologia</p>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Autor: Maria </p>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div style="border: 1px solid #ddd; padding: 15px; text-align: center;">
+                    <div style="height: 150px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                        <img src="../images/media/3.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="margin: 5px 0; font-size: .95rem;">Melhor UI/UX</h3>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Categoria: Design</p>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Autor: João </p>
+                </div>
+                
+                <!-- Mais 3 projetos (linha 2) -->
+                <div style="border: 1px solid #ddd; padding: 15px; text-align: center;">
+                    <div style="height: 150px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                        <img src="../images/media/3.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+
+                    </div>
+                    <h3 style="margin: 5px 0; font-size: .95rem;">Projeto Sustentável</h3>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Categoria: Ecologia</p>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Autor: Ana Maria</p>
+                </div>
+                
+                <div style="border: 1px solid #ddd; padding: 15px; text-align: center;">
+                    <div style="height: 150px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                        <img src="../images/media/1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+
+                    </div>
+                    <h3 style="margin: 5px 0; font-size: .95rem;">Melhor Performance</h3>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Categoria: Tecnologia</p>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Autor: Pedro</p>
+                </div>
+                
+                <div style="border: 1px solid #ddd; padding: 15px; text-align: center;">
+                    <div style="height: 150px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                        <img src="../images/media/2.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+
+                    </div>
+                    <h3 style="margin: 5px 0; font-size: .95rem;">Escolha do Público</h3>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Categoria: Popular</p>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">Autor: jorge</p>
+                </div>
+            </div>
+            
+            <!-- Área inferior esquerda (não especificada) -->
+            <div style="border: 1px solid #ddd; padding: 15px; text-align: center;">
+                <span style="font-size: .8rem;">Mais</span>
+            </div>
+        </div>
+        
+        <!-- Lado Direito (Menor - Destaque do Vencedor) -->
+        <div style="width: 30%;">
+            <!-- Destaque do Grande Vencedor -->
+            <div style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; text-align: center;">
+                <h2 style="color: #ffd700; margin-top: 0; font-size: 1.2rem; padding-bottom: 10px;">Grande Vencedor</h2>
+                <div style="height: 200px; background-color: #fff8e1; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <img src="../images/media/1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+
+                </div>
+                <h3 style="margin: 5px 0; font-size: .95rem;">Projeto Revolucionário</h3>
+                <p style="margin: 5px 0; font-size: .9rem;"><strong>Autor:</strong> Equipe Inovação</p>
+                <p style="margin: 5px 0; font-size: .9rem;"><strong>Categoria:</strong> Geral</p>
+                <!-- <p style="margin: 5px 0; font-size: .9rem;"><strong>Prêmio:</strong> 10.000 MT</p> -->
+            </div>
+            
+            <!-- Botões -->
+            <!-- <div style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 20px;">
+                <button style="padding: 12px; background-color: #4CAF50; color: white; border: none;">Ver Detalhes Completos</button>
+                <button style="padding: 12px; background-color: #2196F3; color: white; border: none;">Compartilhar Vencedor</button>
+            </div> -->
+            
+            <!-- Área inferior direita (não especificada) -->
+            <div style="border: 1px solid #ddd; padding: 15px; text-align: center;">
+               <div>
+                <span style="font-size: .85rem; font-weight: 700;">105 Votos</span>
+               </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="more-hackathons">
+        <div class="header-title">
+            <h3>Nossos Cusrsos</h3>
+        </div>
+        <div class="carrosel-more">
+            <div class="card-more">
+                <img src="../images/assets/11669276_20945851.jpg" alt="" class="img-more">
+            </div>
+            <div class="card-more">
+                <img src="../images/assets/3107637_35212.jpg" alt="" class="img-more">
+            </div>
+            <div class="card-more">
+                <img src="../images/assets/133781034_10258309.jpg" alt="" class="img-more">
+            </div>
+            <div class="card-more">
+                <img src="../images/assets/11667592_20945447.jpg" alt="" class="img-more">
+            </div>
+        </div>
+    </div>
+   
+    <div class="footer" style="padding: 30px;">
+        <div class="footer-row">
+            <div class="institute-description">
+                <div class="footer-logo" style="width: 50px; height: 50px;">
+                    <img src="../images/assets/logo/logo.png" alt="logotipo">
+                </div>
+                <div class="footer-p">
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur asperiores sequi reprehenderit quis veritatis unde enim, eius quos harum labore fugiat sit optio eum eaque praesentium. Molestiae, vel pariatur.</p> -->
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><span>Home</span></li>
+                    <li><span>Concurso</span></li>
+                    <li><span>Projectos</span></li>
+                    <li><span>Galeria</span></li>
+                    <li><span>Votação</span></li>
+                    <li><span>Calendario</span></li>
+                    <li><span>Contacto</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-row line">
+            <div class="copy-right">
+                <p>&copy;2025 <b>Grupo 3</b>, Todos os Direitos Reservados</p>
+            </div>
+           
+        </div>
+    </div>
+    <style>
+        p, h3, span{
+            color: rgb(34, 34, 34);
+        }
+    </style>
 </body>
 </html>

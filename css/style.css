@@ -71,7 +71,7 @@
 
     text-decoration: none;
     color: #424242;
-    font-size: .95rem;
+    font-size: .85rem;
 }
 
 .nav-menu-session{
@@ -90,12 +90,22 @@ button{
     width: 120px;
     font-weight: 700;
     font-size: .75rem;
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .nav-menu-session .btn-signin{
     background-color: transparent;
     border-bottom: solid 2px #9292929a !important;
+}
+
+.nav-menu-session .btn-signin a{
     color: #424242;
+
 }
 
 .nav-menu-session .btn-signup.primary-btn{
@@ -574,4 +584,46 @@ button{
     font-size: .9rem;
     color: #fff;
 
+}
+
+.form-box{
+    background-color: #4463469d;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-form{
+    padding: 10px 20px;
+    width: 200px;
+    outline: none;
+    border: solid 1px rgba(122, 122, 122, 0.363);
+    font-size: .75rem;
+}
+
+.navbar.dark{
+    background-color: #366336;
+}
+
+.navbar.dark .nav-menu-list ul li{
+    border-bottom: solid 1px #fff;
+}
+
+.navbar.dark .nav-menu-list ul .marked{
+
+    font-weight: 700;
+    border-bottom: solid 2px #fff;
+}
+
+.navbar.dark .nav-menu-list ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: .95rem;
 }

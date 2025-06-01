@@ -1,12 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votos</title>
+    <title>Votação Pública</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
-    
+    <div class="navbar dark">
+        <div class="nav-logo">
+            <img src="../images/assets/logo/logo.png" alt="logo-ispt">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-menu-list">
+                <ul>
+                   <li>
+                    <a href="../">Home</a>
+                   </li> 
+                   <li class="marked">
+                    <a href="../votos/index.html">Votação</a>
+                   </li> 
+                   <li>
+                    <a href="../submissao/index.html">Submissão</a>
+                   </li> 
+                   
+                   <li>
+                    <a href="../galeria/index.html">Galeria</a>
+                   </li> 
+                </ul>
+            </div>
+            <div class="nav-menu-session">
+                <!-- <button class="btn-signin"><a href="../signin/index.html">Signin</a></button> -->
+                <!-- <button class="btn-signup primary-btn"><a href="../signup/index.html">Signup</a></button> -->
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 70px; margin-bottom: 70px;">
+        <!-- Lado Esquerdo (Lista de Projetos) -->
+        <div style="margin-right: 50px; width: 300px;">
+            <!-- Logo -->
+            
+            <!-- Lista de Projetos -->
+            <div style="border: 1px solid #ccc; padding: 15px; height: 400px; overflow-y: auto;">
+                <h3 style="text-align: center; font-size: .95rem;">Projetos Disponíveis</h3>
+                
+                <!-- Item de Projeto (repetir para cada projeto) -->
+                <div style="padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+                    <strong style="font-size: .9rem;">Projeto 1</strong>
+                    <p style="margin: 5px 0; font-size: 0.8rem;">Descrição breve do projeto...</p>
+                </div>
+                
+                <div style="padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+                    <strong style="font-size: .9rem;">Projeto 2</strong>
+                    <p style="margin: 5px 0; font-size: 0.8rem;">Descrição breve do projeto...</p>
+                </div>
+                
+                <div style="padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+                    <strong style="font-size: .9rem;">Projeto 3</strong>
+                    <p style="margin: 5px 0; font-size: 0.8rem;">Descrição breve do projeto...</p>
+                </div>
+                
+                <!-- Mais projetos podem ser adicionados aqui -->
+            </div>
+        </div>
+        
+        <!-- Lado Direito (Visualização do Projeto + Votação) -->
+        <div style="width: 400px;">
+            <!-- Visualização do Projeto Selecionado -->
+            <div style="border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; min-height: 300px;">
+                <div>
+                <h2 style="text-align: center; margin-top: 0; font-size: 1rem;">Projeto Selecionado</h2>
+                <div style="text-align: center; margin: 20px 0;">
+                    <div style="width: 100%; height: 150px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: .75rem;">[Pré-visualização do Projeto]</span>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+                <h3 style="margin-bottom: 5px; font-size: .9rem;">Título do Projeto</h3>
+                <p style="margin-top: 0; font-size: .8rem;">Descrição detalhada do projeto selecionado. Aqui vai uma explicação mais completa sobre o que o projeto faz, suas tecnologias e objetivos.</p>
+                <p style="font-size: .9rem;"><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                <p style="font-size: .9rem;"><strong>Autor:</strong> Nome do Participante</p>
+            </div>
+            </div>
+            
+            <!-- Área de Votação -->
+            <div style="text-align: center;">
+                <h3 style="font-size: .9rem;">Votar neste projeto</h3>
+                <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
+                    <button style="padding: 15  px 15px; background-color: #4CAF50; color: white; border: none; font-size: .7rem;">Votar 👍</button>
+                    <button style="padding: 15  px 15px; background-color: #f44336; color: white; border: none; font-size: .7rem;">Não Gostar 👎</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-hackathons">
+        <div class="header-title">
+            <h3>Nossos Projectos</h3>
+        </div>
+        <div class="carrosel-more">
+            <div class="card-more">
+                <img src="../images/assets/11669276_20945851.jpg" alt="" class="img-more">
+            </div>
+            <div class="card-more">
+                <img src="../images/assets/3107637_35212.jpg" alt="" class="img-more">
+            </div>
+            <div class="card-more">
+                <img src="../images/assets/133781034_10258309.jpg" alt="" class="img-more">
+            </div>
+            <div class="card-more">
+                <img src="../images/assets/11667592_20945447.jpg" alt="" class="img-more">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="padding: 30px;">
+        <div class="footer-row">
+            <div class="institute-description">
+                <div class="footer-logo" style="width: 50px; height: 50px;">
+                    <img src="../images/assets/logo/logo.png" alt="logotipo">
+                </div>
+                <div class="footer-p">
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur asperiores sequi reprehenderit quis veritatis unde enim, eius quos harum labore fugiat sit optio eum eaque praesentium. Molestiae, vel pariatur.</p> -->
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><span>Home</span></li>
+                    <li><span>Concurso</span></li>
+                    <li><span>Projectos</span></li>
+                    <li><span>Galeria</span></li>
+                    <li><span>Votação</span></li>
+                    <li><span>Calendario</span></li>
+                    <li><span>Contacto</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-row line">
+            <div class="copy-right">
+                <p>&copy;2025 <b>Grupo 3</b>, Todos os Direitos Reservados</p>
+            </div>
+           
+        </div>
+    </div>
 </body>
 </html>

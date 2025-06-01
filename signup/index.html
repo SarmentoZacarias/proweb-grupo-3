@@ -1,12 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
-    
+    <div class="navbar dark">
+        <div class="nav-logo">
+            <img src="../images/assets/logo/logo.png" alt="logo-ispt">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-menu-list">
+                <ul>
+                   <li>
+                    <a href="../">Home</a>
+                   </li> 
+                   <li>
+                    <a href="../votos/index.html">Votação</a>
+                   </li> 
+                   <li>
+                    <a href="../submissao/index.html">Submissão</a>
+                   </li> 
+                   <li>
+                    <a href="../galeria/index.html">Galeria</a>
+                   </li> 
+                </ul>
+            </div>
+            <div class="nav-menu-session">
+                <!-- <button class="btn-signin"><a href="../signin/index.html">Signin</a></button> -->
+                <!-- <button class="btn-signup primary-btn"><a href="../signup/index.html">Signup</a></button> -->
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 70px; margin-bottom: 70px;">
+        <!-- Lado Esquerdo (Formulário de Cadastro) -->
+        <div style="margin-right: 50px; text-align: center;">
+            <form method="post" action="../php/cadastro.php">
+            <!-- Formulário de Cadastro -->
+            <div style="margin-bottom: 20px; text-align: left;">
+                <div style="margin-bottom: 10px;">
+                    <input type="text" placeholder="Nome" name="nome" class="input-form">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="text" placeholder="Apelido" name="apelido" class="input-form">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="text" placeholder="Código de Estudante" name="codigo_estudante" class="input-form">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="tel" placeholder="Telefone" name="telefone" class="input-form">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="email" placeholder="E-mail" name="email" class="input-form">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="password" placeholder="Senha" name="senha" class="input-form">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="password" placeholder="Confirmar Senha" name="c_senha" class="input-form">
+                </div>
+            </div>
+            
+            <!-- Botão de aceitar termos -->
+            <div class="input-form" style="padding-left: 0; padding-right: 40px; padding-top: 0; border: none;">
+                <input type="checkbox" id="termos">
+                <label for="termos" style="font-size: .7rem;">Aceito os termos e condições</label>
+            </div>
+            
+            <!-- Botão de Cadastro -->
+            <div>
+                <button class="input-form" style="border-radius: 50px; color: #fff; background-color: #366336;" type="submit">Entrar</button>
+            </div>
+        </form>
+        </div>
+        
+        <!-- Lado Direito (Espaço para Imagem) -->
+        <div style="width: 300px; height: 400px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; background-color: #4463469d;">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <div class="footer" style="padding: 30px;">
+        <div class="footer-row">
+            <div class="institute-description">
+                <div class="footer-logo" style="width: 50px; height: 50px;">
+                    <img src="../images/assets/logo/logo.png" alt="logotipo">
+                </div>
+                <div class="footer-p">
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur asperiores sequi reprehenderit quis veritatis unde enim, eius quos harum labore fugiat sit optio eum eaque praesentium. Molestiae, vel pariatur.</p> -->
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><span>Home</span></li>
+                    <li><span>Concurso</span></li>
+                    <li><span>Projectos</span></li>
+                    <li><span>Galeria</span></li>
+                    <li><span>Votação</span></li>
+                    <li><span>Calendario</span></li>
+                    <li><span>Contacto</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-row line">
+            <div class="copy-right">
+                <p>&copy;2025 <b>Grupo 3</b>, Todos os Direitos Reservados</p>
+            </div>
+           
+        </div>
+    </div>
 </body>
 </html>

@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
+    <title>Calendário de Eventos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
-    
+    <div class="navbar">
+        <div class="nav-logo">
+            <img src="../images/assets/logo/logo.png" alt="logo-ispt">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-menu-list">
+                <ul>
+                   <li class="marked">
+                    <a href="#">Home</a>
+                   </li> 
+                   <li>
+                    <a href="../votos/index.html">Votação</a>
+                   </li> 
+                   <li>
+                    <a href="../submissao/index.html">Submissão</a>
+                   </li> 
+                   <li>
+                    <a href="../galeria/index.html">Galeria</a>
+                   </li> 
+                </ul>
+            </div>
+            <div class="nav-menu-session">
+                <button class="btn-signin"><a href="../signin/index.html">Signin</a></button>
+                <button class="btn-signup primary-btn"><a href="../signup/index.html">Signup</a></button>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 70px; margin-bottom: 70px;">
+        <!-- Coluna Esquerda (Lista de Eventos) -->
+        <div style="width: 250px; margin-right: 20px;">
+           
+            <!-- Lista de Eventos -->
+            <div style="border: 1px solid #ccc; padding: 15px; height: 500px; overflow-y: auto;">
+                <h3 style="text-align: center;">Próximos Eventos</h3>
+                
+                <!-- Evento 1 -->
+                <div style="padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+                    <strong style="color: #1a73e8;">15 Out</strong>
+                    <p style="margin: 5px 0;">Workshop de Design</p>
+                    <small>10:00 - 12:00</small>
+                </div>
+                
+                <!-- Evento 2 -->
+                <div style="padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+                    <strong style="color: #1a73e8;">18 Out</strong>
+                    <p style="margin: 5px 0;">Palestra de Tecnologia</p>
+                    <small>14:00 - 16:00</small>
+                </div>
+                
+                <!-- Evento 3 -->
+                <div style="padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+                    <strong style="color: #1a73e8;">22 Out</strong>
+                    <p style="margin: 5px 0;">Competição de Projetos</p>
+                    <small>09:00 - 18:00</small>
+                </div>
+                
+                <!-- Mais eventos podem ser adicionados aqui -->
+            </div>
+        </div>
+        
+        <!-- Coluna Central (Calendário Visual) -->
+        <div style="width: 400px; margin-right: 20px;">
+            <!-- Calendário Mensal -->
+            <div style="border: 1px solid #ccc; padding: 20px; height: 500px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <button style="padding: 5px 10px;">&lt;</button>
+                    <h3 style="margin: 0;">Outubro 2023</h3>
+                    <button style="padding: 5px 10px;">&gt;</button>
+                </div>
+                
+                <!-- Dias da semana -->
+                <div style="display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; margin-bottom: 10px;">
+                    <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+                </div>
+                
+                <!-- Dias do mês -->
+                <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; text-align: center;">
+                    <div style="padding: 10px; color: #ccc;">30</div>
+                    <div style="padding: 10px;">1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+                    <div style="padding: 10px;">7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+                    <div style="padding: 10px;">14</div>
+                    <div style="padding: 10px; background-color: #e6f2ff; border-radius: 50%;">15</div>
+                    <div>16</div><div>17</div>
+                    <div style="padding: 10px; background-color: #e6f2ff; border-radius: 50%;">18</div>
+                    <div>19</div><div>20</div><div>21</div>
+                    <div style="padding: 10px; background-color: #e6f2ff; border-radius: 50%;">22</div>
+                    <div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+                    <div>29</div><div>30</div><div>31</div>
+                    <div style="padding: 10px; color: #ccc;">1</div><div>2</div><div>3</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Coluna Direita (Detalhes do Evento) -->
+        <div style="width: 250px;">
+            <!-- Detalhes do Evento Selecionado -->
+            <div style="border: 1px solid #ccc; padding: 20px; height: 500px;">
+                <h3 style="text-align: center; margin-top: 0;">Detalhes do Evento</h3>
+                
+                <div style="text-align: center; margin: 20px 0;">
+                    <div style="font-size: 2em; color: #1a73e8;">15</div>
+                    <div style="font-weight: bold;">Outubro 2023</div>
+                </div>
+                
+                <h4 style="margin-bottom: 5px;">Workshop de Design</h4>
+                <p style="margin-top: 0;">Aprenda técnicas avançadas de design UI/UX com profissionais experientes.</p>
+                
+                <div style="margin: 15px 0;">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <span style="margin-right: 10px;">⏰</span>
+                        <span>10:00 - 12:00</span>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">📍</span>
+                        <span>Sala de Conferências</span>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <button style="padding: 10px 20px; width: 100%; background-color: #1a73e8; color: white; border: none;">Participar</button>
+                    <button style="padding: 10px 20px; width: 100%; margin-top: 10px; background-color: #f1f3f4; border: none;">Compartilhar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="footer">
+        <div class="footer-row">
+            <div class="institute-description">
+                <div class="footer-logo">
+                    <img src="../images/assets/logo/logo.png" alt="logotipo">
+                </div>
+                <div class="footer-p">
+                    <p>Lorem, ipsum dolor sit amet consectetur asperiores sequi reprehenderit quis veritatis unde enim, eius quos harum labore fugiat sit optio eum eaque praesentium. Molestiae, vel pariatur.</p>
+                </div>
+            </div>
+            <!-- <div class="social-media">
+                <ul>
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-twitter-square"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="footer-row line">
+            <div class="copy-right">
+                <p>&copy;2025 <b>Grupo 3</b>, Todos os Direitos Reservados</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><span>Home</span></li>
+                    <li><span>Concurso</span></li>
+                    <li><span>Projectos</span></li>
+                    <li><span>Galeria</span></li>
+                    <li><span>Votação</span></li>
+                    <li><span>Galendario</span></li>
+                    <li><span>Contacto</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
